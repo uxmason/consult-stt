@@ -1,4 +1,4 @@
-"use client"; 
+"use client"; export const dynamic = 'force-dynamic'; 
 import Image from 'next/image'
 import styles from './page.module.css'
 import Link from 'next/link'

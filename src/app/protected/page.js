@@ -1,4 +1,4 @@
-"use client";
+"use client"; export const dynamic = 'force-dynamic';
 import Cookies from "js-cookie";
 import jwt from "jsonwebtoken";
 import { useEffect } from "react";
