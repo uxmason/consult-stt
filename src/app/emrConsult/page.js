@@ -14,6 +14,14 @@ import { toast } from "react-hot-toast"
 import TopMenuTicker from '../components/TopMenuTicker';
 
 export default function Consult() {
+  return (
+    <Suspense fallback={<div>로딩 중...</div>}>
+      <Content />
+    </Suspense>
+  )
+}
+
+function Content() {
   const router = useRouter();
   const searchParams = useSearchParams()
   const targetRef = useRef();
@@ -221,7 +229,7 @@ export default function Consult() {
   }
 
   return (
-    <Suspense fallback={<div>로딩 중...</div>}>
+    <>
       <div className={'B00'}></div>
       <div className={'B01'}></div>
       <main>
@@ -390,6 +398,6 @@ export default function Consult() {
           <Image className={'loading-img'} src='/img/loading.gif' width={400} height={300} alt='로딩' />
         </div> : null}
       </main>
-    </Suspense>
+    </>
   )
 }
