@@ -1,0 +1,127 @@
+.C00 {
+  height: 85px;
+}
+.C01 {
+  margin: 10px 20px 20px;
+  padding:20px;
+  background-color: rgba(255,255,255,.05);
+  border-radius: 25px;
+  display: flex;
+}
+.C02 {
+  width: calc(100% - 460px);
+  height: fit-content;
+  display: inline-block;
+}
+.C03 {
+  width: 240px;
+  background-color: rgba(13,30,46,.3);
+  border-radius: 15px;
+  margin-left: 20px;
+  overflow: hidden;
+  max-height: 660px;
+}
+.C04 {
+    width: 100%;
+    padding:20px;
+    background-color: rgba(13,30,46,.3);
+    border-radius: 15px;
+    margin-bottom: 20px;
+    backdrop-filter: blur(20px);
+}
+.C05 {
+  width: 100%;
+  padding:20px;
+  background-color: rgba(13,30,46,.3);
+  border-radius: 15px;
+  backdrop-filter: blur(30px);
+}
+.C06 {
+  margin:20px 0;
+  overflow-y: scroll;
+  height: calc(100% - 40px);
+}
+.C07 {
+  padding-top: 20px;
+  margin-top: 20px;
+  border-top: 1px solid rgba(255,255,255,.1);
+}
+.C09 {
+  height: 330px;
+}
+.C10 {
+  width: 50%;
+  padding-right: 10px;
+  float: left;
+}
+.C10:last-of-type {
+  padding-left: 10px;
+  padding-right:0;
+}
+.I00 {
+  line-height: 20px;
+  margin: 0;
+  display: inline-block;
+  border: none;
+  background-color: rgba(255,255,255,.1);
+  padding: 10px 15px;
+  border-radius: 7.5px;
+  width: 100%;
+  font-size: 1.2em;
+  box-shadow: 0 3px 6px rgba(13,30,46,.1);
+  text-align: center;
+}
+.S00 {
+  line-height: 20px;
+  display: inline-block;
+  border: none;
+  background-color: rgba(255,255,255,.1);
+  padding: 9px 15px;
+  border-radius: 7.5px;
+  width: 100%;
+  font-size: 1em;
+  box-shadow: 0 3px 6px rgba(13,30,46,.1);
+  text-align: center;
+  border-right: 15px solid transparent;
+}
+.S00 option {
+    color: rgba(13,30,46,1);
+}
+.T00 {
+  margin: 20px auto 10px;
+  padding: 15px 30px;
+  width: fit-content;
+  background: linear-gradient(170deg, rgba(225,203,215,1) -250%, rgba(112,50,255,1) 50%, rgba(248,80,103,1) 350%);
+  border-radius: 10px;
+  line-height: 20px;
+  box-shadow: 0 3px 6px rgba(13,30,46,.3);
+  transition: .3s;
+  cursor: pointer;
+  font-weight: 600;
+}
+.T00:hover {
+  opacity: .5;
+  text-decoration: underline;
+}
+.T01 {
+  text-indent: 5px;
+  padding: 10px 0;
+}
+.T02 {
+  text-indent: 5px;
+  padding: 10px 0;
+  font-size: .8em;
+  color: rgba(248,80,103,1);
+}
+.T03 {
+  text-indent: 5px;
+  padding: 10px 0;
+  font-size: .8em;
+  color: rgba(94,227,48,1)
+}
+.T05 {
+  text-indent: a5px;
+  font-size: .8em;
+  color: rgba(255,255,255,.3);
+  padding: 10px 0;
+}

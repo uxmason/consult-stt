@@ -1,0 +1,20 @@
+.C00 {
+  left:0;
+  top:10px;
+  width: 220px;
+  height: 74px;
+  padding: 17.5px 0px 17.5px 40px;
+  position: absolute;
+}
+.C01 {
+  width: 39px;
+  height: 39px;
+  background-position-y: -25px;
+  float: left;
+}
+.C02 {
+  width: 100px;
+  height: 25px;
+  float: left;
+  margin:10px 0 10px 20px;
+}

@@ -1,0 +1,43 @@
+.C00 {
+    height: 85px;
+}
+.C01 {
+    margin: 10px 20px 20px;
+    padding:20px;
+    background-color: rgba(255,255,255,.05);
+    border-radius: 25px;
+    display: flex;
+}
+.C02 {
+    width: calc(100% - 260px);
+    height: fit-content;
+    display: inline-block;
+}
+.C03 {
+    width: 240px;
+    background-color: rgba(13,30,46,.3);
+    border-radius: 15px;
+    margin-left: 20px;
+    overflow: hidden;
+    max-height: 690px;
+}
+.C04 {
+    width: 100%;
+    padding:20px;
+    background-color: rgba(13,30,46,.3);
+    border-radius: 15px;
+    margin-bottom: 20px;
+    backdrop-filter: blur(20px);
+}
+.C05 {
+    width: 100%;
+    padding:20px;
+    background-color: rgba(13,30,46,.3);
+    border-radius: 15px;
+    backdrop-filter: blur(30px);
+}
+.C06 {
+    margin:20px 0;
+    overflow-y: scroll;
+    height: calc(100% - 40px);
+}

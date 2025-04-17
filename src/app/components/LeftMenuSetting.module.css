@@ -1,0 +1,27 @@
+.C00 {
+  width: 200px;
+  background-color: rgba(13,30,46,.3);
+  border-radius: 15px;
+  margin-right: 20px;
+  overflow: hidden;
+  padding:20px 0;
+}
+.C01 {
+  overflow-y: scroll;
+  height: 100%;
+  padding: 0 20px;
+}
+.T00 {
+  padding:15px 20px;
+  transition: .3s;
+  border-radius: 10px;
+  color: rgba(255,255,255,.5);
+}
+.T00:hover {
+  opacity: .5;
+}
+.T00.isSelected {
+  color: rgba(255,255,255,1);
+  background-color: rgba(255,255,255,.05);
+  font-weight: 600;
+}

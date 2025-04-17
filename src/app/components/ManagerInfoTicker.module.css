@@ -1,0 +1,80 @@
+.C00 {
+  right: 30px;
+  top: 16px;
+  width: 260px;
+  height: 64px;
+  padding: 10px 20px;
+  position: absolute;
+}
+.C01 {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid rgba(255,255,255,.5);
+  background-position-x: -136px;
+  background-position-y: -150px;
+  background-color: rgba(13,30,46,.5);
+  float: left;
+}
+.C02 {
+  float: left;
+  margin-left: 10px;
+}
+.C03 {
+  position: absolute;
+  right:20px;
+  top:15px;
+  width: 34px;
+  height: 34px;
+  background-position-x: -60.5px;
+  background-position-y: -20.5px;
+  background-color: rgba(255,255,255,.1);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: .3s;
+}
+.C03:hover{
+  opacity: .5;
+}
+.C04 {
+  padding:5px 20px;
+  background-color: rgba(38,66,90,1);
+  position: absolute;
+  width: calc(100% - 120px);
+  left:110px;
+  top:60px;
+  z-index: 1;
+  border-radius: 10px;
+  box-shadow:0 3px 6px rgba(13,30,46,.5);
+  transition: .3s;
+}
+.T00 {
+  font-size: .8em;
+  color: rgba(255,255,255,.5);
+  line-height: 22px;
+}
+.T00 .isBranch {
+  color: rgba(94,227,48,.75);
+}
+.T01 {
+  line-height: 22px;
+}
+.T01 .isRank {
+  color: rgba(94,227,48,1);
+  font-size: .9em;
+}
+.T02 {
+  line-height: 40px;
+  font-size: .8em;
+  font-weight: 600;
+  transition: .3s;
+  color: rgba(255,255,255,.5);
+  cursor: pointer;
+  border-bottom: 1px solid rgba(255,255,255,.1);
+}
+.T02.isNotBorder {
+  border:none;
+}
+.T02:hover {
+  opacity: .5;
+}
