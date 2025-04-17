@@ -1,5 +1,4 @@
 "use client";
-export const dynamic = 'force-dynamic';
 import Image from 'next/image'
 import styles from './page.module.css'
 import ManagerInfoTicker from '../components/ManagerInfoTicker'
@@ -14,7 +13,15 @@ import { useEffect, useLayoutEffect, useRef, useState } from 'react'
 import { toast } from "react-hot-toast"
 import TopMenuTicker from '../components/TopMenuTicker';
 
-export default function Consult() {
+export default function Words() {
+  return (
+    <Suspense fallback={<div>로딩 중...</div>}>
+      <Content />
+    </Suspense>
+  )
+}
+
+function Content() {
   const indexCountLimit = 50;
   const router = useRouter();
   const searchParams = useSearchParams()
@@ -225,7 +232,7 @@ export default function Consult() {
   }
 
   return (
-    <Suspense fallback={<div>로딩 중...</div>}>
+    <>
       <div className={'B00'}></div>
       <div className={'B01'}></div>
       <main>
@@ -385,6 +392,6 @@ export default function Consult() {
           <Image className={'loading-img'} src='/img/loading.gif' width={400} height={300} alt='로딩' />
         </div> : null}
       </main>
-    </Suspense>
+    </>
   )
 }

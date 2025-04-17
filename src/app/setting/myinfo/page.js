@@ -1,11 +1,10 @@
 "use client";
-export const dynamic = 'force-dynamic';
 import Image from 'next/image'
 import styles from './page.module.css'
 import Link from 'next/link'
 import Cookies from "js-cookie"
 import { useRouter } from 'next/navigation'
-import { useEffect, useLayoutEffect, useRef, useState } from 'react'
+import { Suspense, useEffect, useLayoutEffect, useRef, useState } from 'react'
 import HeadlineTicker from '../../components/HeadlineTicker';
 import ManagerInfoTicker from '../../components/ManagerInfoTicker';
 import LeftMenuSetting from '../../components/LeftMenuSetting';
@@ -13,7 +12,15 @@ import CounselorInfoTicker from '../../components/CounselorInfoTicker';
 import { toast } from "react-hot-toast"
 import TopMenuTicker from '../../components/TopMenuTicker';
 
-export default function Home() {
+export default function SettingMyInfo() {
+  return (
+    <Suspense fallback={<div>로딩 중...</div>}>
+      <Content />
+    </Suspense>
+  )
+}
+
+function Content() {
   const router = useRouter();
   const targetRef = useRef();
   const [dimensions, setDimensions] = useState({ width:0, height: 0 });

@@ -1,5 +1,4 @@
 "use client";
-export const dynamic = 'force-dynamic';
 
 import Image from 'next/image'
 import styles from '../page.module.css'
@@ -16,7 +15,15 @@ import LeftMenuSetting from '../../../components/LeftMenuSetting'
 import { toast } from "react-hot-toast"
 import TopMenuTicker from '../../../components/TopMenuTicker';
 
-export default function Home() {
+export default function SettingBranchesEdit() {
+  return (
+    <Suspense fallback={<div>로딩 중...</div>}>
+      <EditContent />
+    </Suspense>
+  )
+}
+
+function EditContent() {
   const router = useRouter();
   const searchParams = useSearchParams()
   const targetRef = useRef();
@@ -134,7 +141,7 @@ export default function Home() {
   };
 
   return (
-    <Suspense fallback={<div>로딩 중...</div>}>
+    <>
       <div className={'B00'}></div>
       <div className={'B01'}></div>
       <main>
@@ -185,6 +192,6 @@ export default function Home() {
           <Image className={'loading-img'} src='/img/loading.gif' width={400} height={300} alt='로딩' />
         </div> : null}
       </main>
-    </Suspense>
+    </>
   )
 }
